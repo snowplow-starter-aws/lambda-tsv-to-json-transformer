@@ -18,7 +18,7 @@ activate: .venv
 install: .venv
 	( \
        . .venv/bin/activate; \
-       pip install -r hello_world/requirements.txt; \
+       pip install -r snowplow-tsv-to-json-transformer/requirements.txt; \
     )
 
 .PHONY: run

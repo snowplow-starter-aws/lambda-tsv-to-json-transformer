@@ -35,7 +35,6 @@ def lambda_handler(event, context):
 
         output.append(output_record)
 
-    # print(output)
     print('Processing completed.  Successful records {}, Failed records {}.'.format(succeeded_record_cnt,
                                                                                     failed_record_cnt))
     return {'records': output}
