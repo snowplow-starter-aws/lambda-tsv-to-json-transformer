@@ -13,6 +13,7 @@ def lambda_handler(event, context):
         print(record['recordId'])
         payload = base64.b64decode(record['data'])
         try:
+            print(payload)
             d = transform(payload.decode('utf-8'))
 
             payload = json.dumps(d) + "\n"

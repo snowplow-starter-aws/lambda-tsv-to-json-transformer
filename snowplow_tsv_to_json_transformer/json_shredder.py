@@ -48,7 +48,7 @@ def fix_schema(prefix, schema):
     snake_case_organization = schema_dict['vendor'].replace('.', '_').lower()
     snake_case_name = re.sub('([^A-Z_])([A-Z])', '\g<1>_\g<2>', schema_dict['name']).lower()
     model = schema_dict['version'].split('-')[0]
-    return "{}_{}_{}_{}".format(prefix, snake_case_organization, snake_case_name, model)
+    return "{}__{}__{}__{}".format(prefix, snake_case_organization, snake_case_name, model)
 
 
 def parse_contexts(contexts):
