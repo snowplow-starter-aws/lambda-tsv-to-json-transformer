@@ -1,3 +1,4 @@
 .aws-sam
 .idea
 .venv
+output-template.yaml
